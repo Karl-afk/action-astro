@@ -25,11 +25,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    - name: Deploy over FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ae891.netcup.net
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /httpdocs/
-        local-dir: ./dist/
+      - name: Deploy over FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ae891.netcup.net
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /httpdocs/
+          local-dir: ./dist/
