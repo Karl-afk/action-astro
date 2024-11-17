@@ -47,6 +47,8 @@ export default defineThemeConfig({
   tagIcons: {
     tailwindcss: 'tabler--brand-tailwind',
     astro: 'tabler--brand-astro',
+    css: 'tabler--brand-css3',
+    html: 'tabler--brand-html5',
     documentation: 'tabler--book'
   },
   shikiThemes: {
