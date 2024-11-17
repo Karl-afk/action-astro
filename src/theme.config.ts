@@ -1,10 +1,10 @@
 import { defineThemeConfig } from './types'
 
 export default defineThemeConfig({
-  site: 'https://nordlys.fjelloverflow.dev',
-  title: 'Nordlys',
-  description: 'A minimal Astro blog theme',
-  author: 'FjellOverflow',
+  site: 'https://astro.karlweinmueller.de',
+  title: '',
+  description: 'Ich möchte mich vorstellen!',
+  author: 'Karl',
   navbarItems: [
     { label: 'Blog', href: '/posts' },
     { label: 'Projects', href: '/projects' },
@@ -15,7 +15,8 @@ export default defineThemeConfig({
       children: [
         { label: 'Landing page', href: '/' },
         { label: '404 page', href: '/404' },
-        { label: 'Author: FjellOverflow', href: '/authors/FjellOverflow' },
+        { label: 'Author: Karl', href: '/authors/Karl' },
+        { label: 'FAQ', href: '/faq' },
         { label: 'Tag: documentation', href: '/tags/documentation' }
       ]
     }
@@ -23,7 +24,7 @@ export default defineThemeConfig({
   footerItems: [
     {
       icon: 'tabler--brand-github',
-      href: 'https://github.com/FjellOverflow/nordlys',
+      href: 'https://github.com/Karl-afk',
       label: 'Github'
     },
     {
@@ -37,7 +38,7 @@ export default defineThemeConfig({
   locale: 'en',
   mode: 'dark',
   modeToggle: true,
-  colorScheme: 'scheme-mono',
+  colorScheme: 'scheme-nord',
   openGraphImage: undefined,
   postsPerPage: 4,
   projectsPerPage: 3,

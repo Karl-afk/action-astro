@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/LandingLayout.astro'
-title: Nordlys
+title: Karl Weinmüller
 background: true
 logo: true
 ---
