@@ -1,7 +1,7 @@
 import { defineThemeConfig } from './types'
 
 export default defineThemeConfig({
-  site: 'https://astro.karlweinmueller.de',
+  site: 'https://karlweinmueller.de',
   title: 'Homelab und Webentwicklung',
   description: 'Homelab und Webentwicklung Blog und Projektdokumentation',
   author: 'Karl',
