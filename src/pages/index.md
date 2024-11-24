@@ -5,7 +5,7 @@ background: true
 logo: true
 ---
 
-A minimal Astro blog theme.\
-Ideal for a personal [blog](/posts) and showcasing a [projects](/projects) portfolio.\
-Fully customizable, dark mode & built-in color schemes.\
-Read more in the [about](/about) section.
+Front-End Entwickler.\
+Hier findest du einen [Blog](/posts) zum Thema Homelab und Frontend Entwicklung\
+Schau dir meine [Projekte](/projects) an.\
+Hier findest du mehr Informationen [über mich](/about).

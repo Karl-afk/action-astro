@@ -3,6 +3,11 @@ layout: '@/layouts/PageLayout.astro'
 title: FAQ
 ---
 
-## How can I contact you?
+## Wie kannst du mich kontaktieren?
 
-You can contact me at ...
+Du kannst mich auf folgenden Kanälen kontaktieren
+
+Email: <a href="mailto:mail@karlweinmueller.de">mail@karlweinmueller.de</a>\
+<a href="https://www.linkedin.com/in/karlweinm%C3%BCller/" class="inline-flex items-center gap-3">
+<span class="iconify tabler--brand-linkedin text-2xl leading-none"></span> LinkedIn
+</a>

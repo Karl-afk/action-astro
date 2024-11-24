@@ -3,25 +3,26 @@ import { defineThemeConfig } from './types'
 export default defineThemeConfig({
   site: 'https://astro.karlweinmueller.de',
   title: '',
-  description: 'Ich möchte mich vorstellen!',
+  description: '',
   author: 'Karl',
   navbarItems: [
     { label: 'Blog', href: '/posts' },
-    { label: 'Projects', href: '/projects' },
+    { label: 'Projekte', href: '/projects' },
     { label: 'Tags', href: '/tags' },
-    { label: 'About', href: '/about' },
+    { label: 'Über mich', href: '/about' },
     {
-      label: 'Other pages',
+      label: 'mehr',
       children: [
-        { label: 'Landing page', href: '/' },
-        { label: '404 page', href: '/404' },
-        { label: 'Author: Karl', href: '/authors/Karl' },
         { label: 'FAQ', href: '/faq' },
-        { label: 'Tag: documentation', href: '/tags/documentation' }
       ]
     }
   ],
   footerItems: [
+    {
+      icon: 'tabler--brand-linkedin',
+      href: 'https://www.linkedin.com/in/karlweinm%C3%BCller/',
+      label: 'LinkedIn'
+    },
     {
       icon: 'tabler--brand-github',
       href: 'https://github.com/Karl-afk',
@@ -35,21 +36,23 @@ export default defineThemeConfig({
   ],
 
   // optional settings
-  locale: 'en',
+  locale: 'de',
   mode: 'dark',
   modeToggle: true,
   colorScheme: 'scheme-nord',
   openGraphImage: undefined,
-  postsPerPage: 4,
-  projectsPerPage: 3,
-  scrollProgress: false,
+  postsPerPage: 5,
+  projectsPerPage: 5,
+  scrollProgress: true,
   scrollToTop: true,
   tagIcons: {
     tailwindcss: 'tabler--brand-tailwind',
     astro: 'tabler--brand-astro',
     css: 'tabler--brand-css3',
     html: 'tabler--brand-html5',
-    documentation: 'tabler--book'
+    javascript: 'tabler--brand-javascript',
+    svelte: 'tabler--brand-svelte',
+    documentation: 'tabler--book',
   },
   shikiThemes: {
     light: 'vitesse-light',

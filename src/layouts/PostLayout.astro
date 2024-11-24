@@ -34,7 +34,7 @@ const frontmatter: PageLayoutProps['frontmatter'] = {
   <div slot="top" class="mt-4">
     <a href="/posts" class="clickable flex w-fit items-center gap-1">
       <span class="iconify text-xl tabler--arrow-left"></span>
-      Back to all posts
+      Zurück zu allen Artikeln
     </a>
   </div>
 
@@ -43,9 +43,9 @@ const frontmatter: PageLayoutProps['frontmatter'] = {
 
   <div class="mt-4">
     <span class="opacity-75"
-      >Published on <time datetime={post.data.publishedDate.toISOString()}
+      >Veröffentlicht am <time datetime={post.data.publishedDate.toISOString()}
         >{toDateString(post.data.publishedDate)}</time
-      > by</span
+      > von</span
     >
     <a class="clickable" href={`/authors/${post.data.author}`}
       >{post.data.author}</a
@@ -56,8 +56,7 @@ const frontmatter: PageLayoutProps['frontmatter'] = {
     !!post.data.showToC && (
       <div
         slot="aside"
-        class="mt-24 hidden border-r border-accent pr-4 opacity-75 transition duration-500 ease-in-out hover:opacity-100 2xl:block"
-      >
+        class="mt-24 hidden border-r border-accent pr-4 opacity-75 transition duration-500 ease-in-out hover:opacity-100 2xl:block">
         <ToC {headings} open />
       </div>
     )
