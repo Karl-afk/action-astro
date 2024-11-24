@@ -85,7 +85,7 @@ const openGraphImageUrl = new URL(resolveImageUrl(openGraphImage), Astro.site)
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={openGraphImageUrl} />
 
-    {
+    <!-- {
       preloadFonts.map((font) => (
         <link
           rel="preload"
@@ -95,7 +95,7 @@ const openGraphImageUrl = new URL(resolveImageUrl(openGraphImage), Astro.site)
           crossorigin="anonymous"
         />
       ))
-    }
+    } -->
 
     {
       publishedDate && (

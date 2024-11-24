@@ -34,7 +34,7 @@ const frontmatter: PageLayoutProps['frontmatter'] = {
   <div slot="top" class="mt-4">
     <a href="/posts" class="clickable flex w-fit items-center gap-1">
       <span class="iconify text-xl tabler--arrow-left"></span>
-      Zurück zu allen Artikeln
+      Zurück zur Übersicht
     </a>
   </div>
 
@@ -49,7 +49,9 @@ const frontmatter: PageLayoutProps['frontmatter'] = {
     >
     <a class="clickable" href={`/authors/${post.data.author}`}
       >{post.data.author}</a
-    > · <span class="whitespace-nowrap opacity-75">{readingTime} </span>
+    > · <span class="whitespace-nowrap opacity-75"
+      >Lesedauer: {Math.ceil(readingTime)} min
+    </span>
   </div>
 
   {

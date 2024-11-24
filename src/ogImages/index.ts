@@ -4,36 +4,36 @@ import site from '@/ogImages/site'
 import config from '@/theme.config'
 import satori, { type SatoriOptions } from 'satori'
 
-const fetchFont = async (weight: string) =>
-  (
-    await fetch(
-      `https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-sans@latest/latin-${weight}-normal.ttf`
-    )
-  ).arrayBuffer()
+// const fetchFont = async (weight: string) =>
+//   (
+//     await fetch(
+//       `https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-sans@latest/latin-${weight}-normal.ttf`
+//     )
+//   ).arrayBuffer()
 
 const satoriOptions: SatoriOptions = {
   width: 1200,
   height: 630,
   embedFont: true,
   fonts: [
-    {
-      name: 'IBM Plex Sans',
-      data: await fetchFont('400'),
-      weight: 400,
-      style: 'normal'
-    },
-    {
-      name: 'IBM Plex Sans',
-      data: await fetchFont('600'),
-      weight: 600,
-      style: 'normal'
-    },
-    {
-      name: 'IBM Plex Sans',
-      data: await fetchFont('700'),
-      weight: 700,
-      style: 'normal'
-    }
+  //   {
+  //     name: 'Verdana',
+  //     data: await fetchFont('400'),
+  //     weight: 400,
+  //     style: 'normal'
+  //   },
+  //   {
+  //     name: 'IBM Plex Sans',
+  //     data: await fetchFont('600'),
+  //     weight: 600,
+  //     style: 'normal'
+  //   },
+  //   {
+  //     name: 'IBM Plex Sans',
+  //     data: await fetchFont('700'),
+  //     weight: 700,
+  //     style: 'normal'
+  //   }
   ]
 }
 

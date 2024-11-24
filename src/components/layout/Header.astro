@@ -11,13 +11,12 @@ import type {
   NavItem as NavItemType
 } from '@/types'
 import { Image } from 'astro:assets'
-
 export interface Props {
   activeHeaderLink?: string
 }
 
 const { activeHeaderLink } = Astro.props
-
+const showLogo = false
 export const isNavItem = (item: HeaderItemType): item is NavItemType =>
   Object.hasOwn(item, 'href')
 ---
@@ -28,12 +27,16 @@ export const isNavItem = (item: HeaderItemType): item is NavItemType =>
   >
   <div class="flex justify-between py-4 sm:py-8">
     <a href="/" class="flex gap-2 text-2xl font-semibold text-accent">
-      <Image
-        alt="Karl Weinmüller Logo"
-        src={logo}
-        height={24}
-        loading="eager"
-      />
+      {
+        showLogo && (
+          <Image
+            alt="Karl Weinmüller Logo"
+            src={logo}
+            height={24}
+            loading="eager"
+          />
+        )
+      }
       {config.title}
     </a>
     <nav class="hidden flex-col justify-end sm:flex">

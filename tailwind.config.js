@@ -20,7 +20,7 @@ export default {
         'accent-bg': withOpacity('--accent-bg')
       },
       fontFamily: {
-        sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans]
+        sans: ['Verdana', ...defaultTheme.fontFamily.sans]
       }
     }
   },

@@ -6,6 +6,6 @@ export default function () {
   return function (tree: any, { data }: any) {
     const textOnPage = toString(tree)
     const readingTime = getReadingTime(textOnPage)
-    data.astro.frontmatter.readingTime = readingTime.text
+    data.astro.frontmatter.readingTime = readingTime.minutes
   }
 }

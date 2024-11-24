@@ -14,24 +14,23 @@ const { page } = Astro.props
       <div class="flex gap-4">
         {page.url.prev ? (
           <a class="clickable" href={page.url.prev}>
-            Previous
+            Vorher
           </a>
         ) : (
           <span class="opacity-25" aria-disabled="true">
-            Previous
+            Vorher
           </span>
         )}
         {page.currentPage} / {page.lastPage}
         {page.url.next ? (
           <a
             class={!page.url.next ? 'no-underline opacity-25' : 'clickable'}
-            href={page.url.next}
-          >
-            Next
+            href={page.url.next}>
+            Nächste
           </a>
         ) : (
           <span class="opacity-25" aria-disabled="true">
-            Next
+            Nächste
           </span>
         )}
       </div>

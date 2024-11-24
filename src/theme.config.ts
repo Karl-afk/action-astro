@@ -2,8 +2,8 @@ import { defineThemeConfig } from './types'
 
 export default defineThemeConfig({
   site: 'https://astro.karlweinmueller.de',
-  title: '',
-  description: '',
+  title: 'Homelab und Webentwicklung',
+  description: 'Homelab und Webentwicklung Blog und Projektdokumentation',
   author: 'Karl',
   navbarItems: [
     { label: 'Blog', href: '/posts' },
@@ -13,7 +13,7 @@ export default defineThemeConfig({
     {
       label: 'mehr',
       children: [
-        { label: 'FAQ', href: '/faq' },
+        { label: 'Impressum/Datenschutz', href: '/impressum-datenschutz' },
       ]
     }
   ],
@@ -33,6 +33,7 @@ export default defineThemeConfig({
       href: '/feed.xml',
       label: 'RSS feed'
     }
+    
   ],
 
   // optional settings
